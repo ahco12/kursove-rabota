@@ -19,6 +19,7 @@ export default function AuthPage() {
       } else {
         await login(email, password);
       }
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (err: any) {
       setError(err.message || "Authentication failed");
     } finally {
